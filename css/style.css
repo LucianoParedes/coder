@@ -11897,28 +11897,29 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
-.logo {
-  color: white;
-  font-size: 25px;
-  font-weight: 800;
-}
-
 .menu .navbar ul li {
   position: relative;
   float: left;
 }
-
-.menu .navbar ul li a {
+.menu a {
   font-size: 18px;
   padding: 20px;
   color: white;
   display: block;
   font-weight: 600;
 }
-
-.menu .navbar ul li a:hover {
+.menu a:hover {
   color: #ce9678;
+}
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+.logo {
+  color: white;
+  font-size: 25px;
+  font-weight: 800;
 }
 
 #menu {
@@ -11929,15 +11930,9 @@ body {
   width: 25px;
 }
 
-.menu label {
-  cursor: pointer;
-  display: none;
-}
-
 .header-content {
   text-align: center;
 }
-
 .header-content h1, .header-content .h1 {
   font-size: 75px;
   line-height: 80px;
@@ -11948,7 +11943,7 @@ body {
 
 .text-1 {
   font-size: 20px;
-  color: #c5c5c5;
+  color: white;
   padding: 0 250px;
   margin-bottom: 25px;
 }
@@ -12062,8 +12057,8 @@ body {
   border-color: black;
 }
 
-/* productos */
-.cajaprod {
+/* productos y ofertas */
+.cajaprodofer {
   display: flex;
   height: 731px;
   width: 100%;
@@ -12071,13 +12066,8 @@ body {
   justify-content: space-around;
 }
 
-/* ofertas */
-.cajaofer {
-  display: flex;
-  height: 731px;
-  width: 100%;
-  background-color: white;
-  justify-content: space-around;
+.breadcrumb {
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */

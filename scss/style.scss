@@ -1,6 +1,13 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
+// variables
+$fondo-color: #602e07;
+$color-letra: white;
+$color-hover-navbar: #ce9678;
+$color-header: black;
+$color-caja: #eaca12;
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +17,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #602e07;
+  background-color: $fondo-color;
 }
 /* nav y titulo index*/
 .container {
@@ -36,50 +43,54 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  // navbar
+  .navbar ul li {
+    position: relative;
+    float: left;
+  }
+  a {
+    font-size: 18px;
+    padding: 20px;
+    color: $color-letra;
+    display: block;
+    font-weight: 600;
+  }
+  a:hover {
+    color: $color-hover-navbar;
+  }
+  label {
+    cursor: pointer;
+    display: none;
+  }
 }
 
 .logo {
-  color: white;
+  color: $color-letra;
   font-size: 25px;
   font-weight: 800;
 }
-.menu .navbar ul li {
-  position: relative;
-  float: left;
-}
-.menu .navbar ul li a {
-  font-size: 18px;
-  padding: 20px;
-  color: white;
-  display: block;
-  font-weight: 600;
-}
-.menu .navbar ul li a:hover {
-  color: #ce9678;
-}
+
 #menu {
   display: none;
 }
 .menu-icono {
   width: 25px;
 }
-.menu label {
-  cursor: pointer;
-  display: none;
-}
+
 .header-content {
   text-align: center;
+  h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: $color-letra;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
 }
-.header-content h1 {
-  font-size: 75px;
-  line-height: 80px;
-  color: white;
-  text-transform: uppercase;
-  margin-bottom: 35px;
-}
+
 .text-1 {
   font-size: 20px;
-  color: #c5c5c5;
+  color: $color-letra;
   padding: 0 250px;
   margin-bottom: 25px;
 }
@@ -120,7 +131,7 @@ body {
   margin-top: 30px;
   font-size: 25px;
   text-align: center;
-  color: white;
+  color: $color-letra;
 }
 
 .fondo1 {
@@ -132,12 +143,12 @@ body {
 .tpdc {
   margin-top: 100px;
   font-size: 40px;
-  color: white;
+  color: $color-letra;
   display: flex;
   justify-content: center;
 }
 .section {
-  color: white;
+  color: $color-letra;
   text-align: center;
   align-items: center;
   margin-top: 0px;
@@ -149,7 +160,7 @@ body {
 
 /* titulo en otras paginas */
 .title-pags {
-  color: white;
+  color: $color-letra;
   text-transform: uppercase;
   font-weight: 800;
   font-size: 70px;
@@ -159,7 +170,7 @@ body {
 .boxdif {
   height: 2000px;
   height: 150px;
-  background-color: black;
+  background-color: $color-header;
 }
 
 /* nosotros */
@@ -167,7 +178,7 @@ body {
 .caja1 {
   width: 100%;
   height: auto;
-  background-color: #eaca12;
+  background-color: $color-caja;
   margin-bottom: 0px;
   display: flex;
   flex-direction: column;
@@ -183,17 +194,17 @@ body {
   width: 1000px;
   height: 731px;
   margin: 30px;
-  background-color: #eaca12;
+  background-color: $color-caja;
   text-align: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
   border-style: solid;
-  border-color: black;
+  border-color: $color-header;
 }
 
-/* productos */
-.cajaprod {
+/* productos y ofertas */
+.cajaprodofer {
   display: flex;
   height: 731px;
   width: 100%;
@@ -201,11 +212,6 @@ body {
   justify-content: space-around;
 }
 
-/* ofertas */
-.cajaofer {
-  display: flex;
-  height: 731px;
-  width: 100%;
-  background-color: white;
-  justify-content: space-around;
+.breadcrumb {
+  text-transform: uppercase;
 }
