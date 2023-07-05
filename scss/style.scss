@@ -98,6 +98,7 @@ body {
 @media (max-width: 991px) {
   .menu {
     padding: 30px;
+    z-index: 1;
   }
   .menu label {
     display: initial;
@@ -220,10 +221,12 @@ body {
 /* productos y ofertas */
 .cajaprodofer {
   display: flex;
-  height: 731px;
+  flex-wrap: wrap;
+  height: auto;
   width: 100%;
   background-color: white;
   justify-content: space-around;
+  z-index: 0;
 }
 
 .breadcrumb {
