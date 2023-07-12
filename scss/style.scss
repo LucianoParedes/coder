@@ -9,6 +9,15 @@ $color-header: black;
 $color-caja: #eaca12;
 $color-footer: #c6c7c8;
 
+@mixin repetible1 {
+  width: 100%;
+  height: auto;
+  background-color: $color-caja;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +57,6 @@ body {
   justify-content: space-between;
   .logo {
     position: relative;
-    
   }
   // navbar
   .navbar ul li {
@@ -178,17 +186,14 @@ body {
   height: 2000px;
   height: 150px;
   background-color: $color-header;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* nosotros */
 
 .caja1 {
-  width: 100%;
-  height: auto;
-  background-color: $color-caja;
-  margin-bottom: 0px;
-  display: flex;
-  flex-direction: column;
+  @include repetible1;
   .cafes {
     color: $color-header;
     text-align: center;
@@ -242,5 +247,16 @@ body {
 
   a:hover {
     color: $color-hover-navbar;
+  }
+}
+
+// mapa de sitio
+
+.mds{
+  @include repetible1;
+  text-transform: uppercase;
+  text-align: center;
+  .contentmds{
+font-size: large;
   }
 }

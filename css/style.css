@@ -12027,6 +12027,8 @@ body {
   height: 2000px;
   height: 150px;
   background-color: black;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* nosotros */
@@ -12091,6 +12093,20 @@ body {
 }
 .breadcrumb a:hover {
   color: #ce9678;
+}
+
+.mds {
+  width: 100%;
+  height: auto;
+  background-color: #eaca12;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  text-align: center;
+}
+.mds .contentmds {
+  font-size: large;
 }
 
 /*# sourceMappingURL=style.css.map */
